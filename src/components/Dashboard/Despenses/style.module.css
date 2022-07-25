@@ -1,0 +1,28 @@
+.containerDespenses {
+  font-family: var(--font-nunito);
+}
+
+.filter {
+  display: flex;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--color-black);
+}
+
+.btnFilter {
+  width: 87px;
+  height: 40px;
+  background: var(--color-backgroundButton);
+  border: 1.4px solid var(--color-backgroundButton);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: var(--color-blackButton);
+  font-family: inherit;
+}

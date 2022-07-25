@@ -1,0 +1,7 @@
+.containerDashboard {
+  background-color: var(--color-white);
+}
+
+.mainDashboard {
+  display: flex;
+}

@@ -1,0 +1,12 @@
+:root {
+  --font-inter: "Inter", sans-serif;
+  --font-nunito: "Nunito", sans-serif;
+
+  --color-white: #ffffff;
+  --color-background: #f8f9fa;
+  --color-buttonPink: #fd377e;
+  --color-backgroundButton: #e9ecef;
+  --color-black: #212529;
+  --color-blackButton: #343a40;
+  --color-grey: #868e96;
+}

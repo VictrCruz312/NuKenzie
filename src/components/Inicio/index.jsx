@@ -1,15 +1,27 @@
-import "./style.css";
+import styles from "./style.module.css";
 
-const Inicio = () => {
+const Inicio = ({ setStatusLog }) => {
+  const openDasboard = () => {
+    setStatusLog(true);
+  };
+
   return (
-    <div className="container__inicio">
-      <div>
-        <img src="./assets/nuKenzie.png" alt="" />
-        <h1>Centralize o controle das suas finanças</h1>
-        <p>de forma rápida e segura</p>
-        <button>Iniciar</button>
+    <div className={styles.containerInicio}>
+      <div className={styles.containerLeft}>
+        <img className={styles.imgLogo} src="./assets/nuKenzie.png" alt="" />
+        <h1 className={styles.textOne}>
+          Centralize o controle das suas finanças
+        </h1>
+        <p className={styles.textTwo}>de forma rápida e segura</p>
+        <button className={styles.buttonStart} onClick={openDasboard}>
+          Iniciar
+        </button>
       </div>
-      <img src="./assets/nuKenzie-inicio.svg" alt="" />
+      <img
+        className={styles.imgPrincipal}
+        src="./assets/nuKenzie-inicio.svg"
+        alt=""
+      />
     </div>
   );
 };

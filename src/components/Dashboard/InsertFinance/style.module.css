@@ -1,0 +1,102 @@
+.insertFinance {
+  padding: 0 12.5vw;
+  font-family: var(--font-inter);
+}
+
+.formFinance {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 363px;
+  width: 363px;
+  height: 351px;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  padding: 5vh 3.5vw;
+  margin: 0;
+}
+
+.descriptionText,
+.insertValueText,
+.typeValue {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  color: var(--color-black);
+}
+
+.descriptionInput {
+  margin: 12px 0 4px 0;
+  box-sizing: border-box;
+  border: 2px solid var(--color-background);
+  border-radius: 8px;
+  padding: 13px 16px;
+  width: 100%;
+  background-color: var(--color-background);
+}
+
+.exempleDescription {
+  margin-bottom: 17px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--color-grey);
+}
+
+.containerValueAndType {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.labelAndInput {
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.textRightRS {
+  box-sizing: border-box;
+  display: flex;
+  width: 128px;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--color-black);
+  background-color: var(--color-background);
+  border-radius: 8px;
+  padding-right: 16px;
+}
+
+.inputValor {
+  background-color: var(--color-background);
+  border: none;
+  width: 100%;
+  padding: 11px 0 11px 16px;
+  border: 2px solid var(--color-background);
+  border-radius: 8px;
+}
+
+.selectType {
+  background-color: var(--color-background);
+  border: none;
+  padding: 11px 16px;
+  width: 150px;
+  border: 2px solid var(--color-background);
+  border-radius: 8px;
+}
+
+.buttonInsertValue {
+  box-sizing: border-box;
+  width: 100%;
+  height: 48px;
+  color: var(--color-white);
+  background: var(--color-buttonPink);
+  border: 2px solid var(--color-buttonPink);
+  border-radius: 8px;
+  margin-top: 19px;
+}
