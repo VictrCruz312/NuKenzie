@@ -1,4 +1,5 @@
 .App {
   text-align: center;
+  box-sizing: border-box;
   background-color: rgba(33, 37, 41, 1);
 }

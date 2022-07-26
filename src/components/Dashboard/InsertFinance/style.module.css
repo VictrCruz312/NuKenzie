@@ -1,6 +1,6 @@
 .insertFinance {
-  padding: 0 12.5vw;
   font-family: var(--font-inter);
+  max-width: 90vw;
 }
 
 .formFinance {
@@ -8,13 +8,18 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 363px;
-  width: 363px;
+  width: 100%;
   height: 351px;
-  border: 1px solid #e9ecef;
+  border: 1px solid var(--color-backgroundButton);
   border-radius: 4px;
   padding: 5vh 3.5vw;
   margin: 0;
+}
+
+@media screen and (min-width: 385px) {
+  .insertFinance {
+    width: 363px;
+  }
 }
 
 .descriptionText,
@@ -53,7 +58,7 @@
 .labelAndInput {
   display: flex;
   justify-content: center;
-  width: 150px;
+  width: 110px;
   flex-direction: column;
   align-items: flex-start;
 }
@@ -61,7 +66,7 @@
 .textRightRS {
   box-sizing: border-box;
   display: flex;
-  width: 128px;
+  width: 98px;
   align-items: center;
   font-weight: 400;
   font-size: 16px;
@@ -69,7 +74,6 @@
   color: var(--color-black);
   background-color: var(--color-background);
   border-radius: 8px;
-  padding-right: 16px;
 }
 
 .inputValor {
@@ -81,11 +85,22 @@
   border-radius: 8px;
 }
 
+@media screen and (min-width: 385px) {
+  .textRightRS {
+    width: 128px;
+    padding-right: 16px;
+  }
+
+  .labelAndInput {
+    width: 150px;
+  }
+}
+
 .selectType {
   background-color: var(--color-background);
   border: none;
   padding: 11px 16px;
-  width: 150px;
+  width: 100%;
   border: 2px solid var(--color-background);
   border-radius: 8px;
 }
@@ -99,4 +114,5 @@
   border: 2px solid var(--color-buttonPink);
   border-radius: 8px;
   margin-top: 19px;
+  cursor: pointer;
 }

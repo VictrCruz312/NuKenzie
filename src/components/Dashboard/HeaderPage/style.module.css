@@ -24,4 +24,10 @@
   line-height: 19px;
   text-align: center;
   color: #343a40;
+  cursor: pointer;
+}
+
+.backInit:hover {
+  background-color: var(--color-buttonPink);
+  color: var(--color-white);
 }

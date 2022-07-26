@@ -1,4 +1,5 @@
 import styles from "./style.module.css";
+import Total from "../Total";
 
 const InsertFinance = ({ listTransactions, setListTransactions }) => {
   const newTransation = { type: "Entrada" };
@@ -6,7 +7,6 @@ const InsertFinance = ({ listTransactions, setListTransactions }) => {
   const addTransaction = (event) => {
     event.preventDefault();
     setListTransactions([...listTransactions, newTransation]);
-    console.log(listTransactions);
     event.target.reset();
   };
 
@@ -67,6 +67,7 @@ const InsertFinance = ({ listTransactions, setListTransactions }) => {
           Inserir valor
         </button>
       </form>
+      <Total listTransactions={listTransactions} />
     </section>
   );
 };
