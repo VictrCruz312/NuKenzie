@@ -1,0 +1,19 @@
+.containerDashboard {
+  box-sizing: border-box;
+  background-color: var(--color-white);
+  padding-bottom: 50px;
+}
+
+.mainDashboard {
+  display: flex;
+  padding: 0 12.5vw;
+  justify-content: center;
+  gap: 59px;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1140px) {
+  .mainDashboard {
+    flex-wrap: nowrap;
+  }
+}

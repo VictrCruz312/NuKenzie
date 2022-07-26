@@ -1,0 +1,39 @@
+.containerInicio {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  height: 100vh;
+  align-items: center;
+  font-family: var(--font-nunito);
+}
+
+.containerLeft {
+  width: 347px;
+}
+
+.textOne {
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 48px;
+  color: var(--color-white);
+}
+
+.textTwo {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--color-white);
+}
+
+.buttonStart {
+  border: 2px solid var(--color-buttonPink);
+  border-radius: 8px;
+  background: var(--color-buttonPink);
+  padding: 14.5px 97px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--color-white);
+  cursor: pointer;
+}
