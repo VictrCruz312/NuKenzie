@@ -2,6 +2,7 @@
   width: 100vw;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 48px;
   height: 100vh;
   align-items: center;
@@ -10,6 +11,29 @@
 
 .containerLeft {
   width: 347px;
+}
+
+.imgPrincipal {
+  display: none;
+  width: 293px;
+}
+
+@media screen and (min-width: 699px) {
+  .imgPrincipal {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 799px) {
+  .imgPrincipal {
+    width: 393px;
+  }
+}
+
+@media screen and (min-width: 999px) {
+  .imgPrincipal {
+    width: 593px;
+  }
 }
 
 .textOne {
