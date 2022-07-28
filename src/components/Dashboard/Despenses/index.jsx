@@ -68,33 +68,50 @@ const Despenses = ({ listTransactions, setListTransactions }) => {
         </nav>
       </div>
       <ul className={styles.listDespenses}>
-        {filtered.map((transaction, index) => (
-          <li
-            className={
-              transaction.type === "Entrada"
-                ? styles.positiveEntries
-                : styles.transaction
-            }
-            key={index}
-          >
-            <div className={styles.containerTransaction}>
-              <h3 className={styles.description}>{transaction.description}</h3>
-              <div className={styles.containerTransactionRight}>
-                <p className={styles.value}>
-                  R$ {parseInt(transaction.value)},00
-                </p>
-                <button
-                  onClick={(event) => deleteFinance(event.target)}
-                  className={styles.btnDelete}
-                  id={index}
-                >
-                  <img src="./assets/trash.png" alt="lixeira" />
-                </button>
+        {filtered.length === 0 ? (
+          <>
+            <h1 className={styles.notTransactionsText}>
+              Você ainda não possui nenhum lançamento
+            </h1>
+            <li className={styles.listNotTransactions}>
+              <img
+                className={styles.notTransactionsImg}
+                src="./assets/noCard.png"
+                alt=""
+              />
+            </li>
+          </>
+        ) : (
+          filtered.map((transaction, index) => (
+            <li
+              className={
+                transaction.type === "Entrada"
+                  ? styles.positiveEntries
+                  : styles.transaction
+              }
+              key={index}
+            >
+              <div className={styles.containerTransaction}>
+                <h3 className={styles.description}>
+                  {transaction.description}
+                </h3>
+                <div className={styles.containerTransactionRight}>
+                  <p className={styles.value}>
+                    R$ {parseInt(transaction.value)},00
+                  </p>
+                  <button
+                    onClick={(event) => deleteFinance(event.target)}
+                    className={styles.btnDelete}
+                    id={index}
+                  >
+                    <img src="./assets/trash.png" alt="lixeira" />
+                  </button>
+                </div>
               </div>
-            </div>
-            <span className={styles.type}>{transaction.type}</span>
-          </li>
-        ))}
+              <span className={styles.type}>{transaction.type}</span>
+            </li>
+          ))
+        )}
       </ul>
     </section>
   );
